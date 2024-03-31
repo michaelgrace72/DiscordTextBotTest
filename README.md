@@ -4,8 +4,10 @@ this project wont stop here where i will continue to configure a better bot prog
 
 ### Task Lists
 - [x] initialize discord app and bot and inviting it to testdiscordserver
-- [ ] configuring bot
+- [ ] configuring basic event handling
+- [ ] add more feature
 - [ ] finalize bot and add it to main server
+- [ ] fix
 
 ### Contributor
 
