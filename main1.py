@@ -1,6 +1,7 @@
 import dotenv
 import os
 import discord
+from discord.ext import commands
 from typing import Final
 import datetime
 import random
@@ -62,7 +63,7 @@ async def on_message(message: discord.Message) -> None:
     user_message: str = message.content
     channel: str = str(message.channel)
     time = datetime.datetime.now()
-    print(f'{time} {username} in {channel} says: {user_message}')      
+    print(f'{time} {username} in {channel} says: {user_message}') 
     await send_message(message, user_message)
     
 # STEP 5 DISCORD BOT RUN
