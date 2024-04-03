@@ -2,6 +2,9 @@
 this is a documentation for a small projects of mine where im learning how to make a discord bot.
 this project wont stop here where i will continue to configure a better bot program but for now i'll make this works first
 
+## Installation
+- To be 
+
 
 ## List of command
 Start every command with '/.' for example
@@ -9,9 +12,10 @@ Start every command with '/.' for example
 ./help
 ```
 
-- Hello: 
+- Hello: messagge back
 - whoami (@member): show user information or any member of the server by mentioning
-- 
+- serverinfo: show server infomation
+- >play (youtube.url): play youtube video has to be connected to voice channel
 
 ### Task Lists
 - [x] initialize discord app and bot and inviting it to testdiscordserver
@@ -23,4 +27,5 @@ Start every command with '/.' for example
 ### Contributor
 
 [Mikha Gracia S](https://github.com/michaelgrace72)
-[]()
+[M. Irfan Hakeem](https://github.com/irfhakeem)
+[M. Nabil Fadhil](https://github.com/papavero30)

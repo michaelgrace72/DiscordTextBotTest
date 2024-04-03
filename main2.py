@@ -27,7 +27,7 @@ def search_song(query):
 # Command
 @client.command(alias=['hi'])
 async def hello(ctx):
-  await ctx.send('Hello!')
+  await ctx.send(f'Hello! {ctx.author.mention}')
 
 # @client.command()
 # async def shutdown(ctx):
@@ -75,6 +75,10 @@ async def serverinfo(ctx):
   embed.add_field(name='Members', value=ctx.guild.member_count, inline=False)
   embed.add_field(name='Roles', value=' '.join([role.mention for role in ctx.guild.roles]), inline=False)
   await ctx.send(embed=embed)
+
+blocked_words = ['peepee', 'poopee', 'poopoo', 'http://', 'https://']
+
+
 
 @client.command()
 async def play(ctx, url):
