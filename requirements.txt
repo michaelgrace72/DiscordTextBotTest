@@ -4,3 +4,5 @@ discord
 youtube_dl
 asyncio
 pynacl
+
+ffmpeg
