@@ -1,8 +1,7 @@
-youtube-search-python
 discord.ext
 discord
 youtube_dl
+yt-dlp
 asyncio
 pynacl
-
 ffmpeg
