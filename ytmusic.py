@@ -8,7 +8,6 @@ class music_cog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
     
-        #all the music related stuff
         self.is_playing = False
         self.is_paused = False
 
@@ -20,7 +19,6 @@ class music_cog(commands.Cog):
         self.vc = None
         self.ytdl = YoutubeDL(self.YDL_OPTIONS)
 
-    #searching the item on youtube
     def search_yt(self, item):
         if item.startswith("https://"):
             title = self.ytdl.extract_info(item, download=False)["title"]
@@ -32,10 +30,8 @@ class music_cog(commands.Cog):
         if len(self.music_queue) > 0:
             self.is_playing = True
 
-            #get the first url
             m_url = self.music_queue[0][0]['source']
 
-            #remove the first element as you are currently playing it
             self.music_queue.pop(0)
             loop = asyncio.get_event_loop()
             data = await loop.run_in_executor(None, lambda: self.ytdl.extract_info(m_url, download=False))

@@ -4,7 +4,6 @@ import discord
 from discord.ext import commands
 from typing import Final
 from youtube_dl import YoutubeDL
-import youtubesearchpython
 import datetime
 import random
 import asyncio
